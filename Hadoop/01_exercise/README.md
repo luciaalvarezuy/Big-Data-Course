@@ -181,15 +181,16 @@ volvemos al navegador, a la ruta `http://localhost:9870`
 
 vamos a Utilities &rarr; Broswe the file system y luego a la ruta user/root como se muestra en las imágenes:
 
-![hadoop1](/hadoop1.png)
+![hadoop1](https://github.com/luciaalvarezuy/Clase_practica_hadoop/raw/main/hadoop1.png)
 
-![hadoop2](/hadoop2.png)
+
+![01_exercise](https://github.com/luciaalvarezuy/Big-Data-Course/blob/main/Hadoop/01_exercise/hadoop2.png)
 
 Ten en cuenta que el tamaño del bloque es de 128 MB aunque el tamaño del archivo sea en realidad mucho menor. Esto se debe a que el tamaño de bloque predeterminado utilizado por HDFS es de 128 MB.
 
 Puedes hacer clic en el archivo para ver en qué bloque se encuentra. Esto te dará información sobre el archivo en términos de número de bytes, ID de bloque, etc.
 
-![hadoop3](/hadoop3.png)
+![hadoop3](https://github.com/luciaalvarezuy/Big-Data-Course/blob/main/Hadoop/01_exercise/hadoop3.png)
 
 para salir de la terminal dentro del contenedor simplemente podemos ejecutar: `exit`
 
@@ -246,7 +247,7 @@ Con Hive funcionando, que te permite acceder a beeline. Beeline es una interfaz 
 
 Tendríamos que ver este resultado:
 
-![hive1](/hive1.png)
+![hive1](https://github.com/luciaalvarezuy/Big-Data-Course/blob/main/Hadoop/01_exercise/hive1.png)
 
 Ya dentro de la consola vamos a crear una tabla y a cargarle la información que descargamos en el archivo csv. Para crear la tabla podemos ejecutar el siguiente comando:
 
@@ -258,7 +259,7 @@ Para ver si la tabla se creo correctamente podemos utilizar el siguiente comando
 
 Si todo es correcto tendríamos que ver el siguiente resultado:
 
-![hive2](/hive2.png)
+![hive2](https://github.com/luciaalvarezuy/Big-Data-Course/blob/main/Hadoop/01_exercise/hive2.png)
 
 Ahora podemos cargar la que descargamos en el primer paso en la tabla utilizando el siguiente comando:
 
