@@ -1,0 +1,201 @@
+id,edad,sexo,pais_donde_vive,opinion_big_data
+1,64,Masculino,Paraguay,Necesario para decisiones basadas en datos
+2,61,Masculino,Paraguay,Puede ser intimidante al principio
+3,62,Femenino,Brasil,Puede ser usado para mejorar la sociedad
+4,56,Femenino,Paraguay,Permite a las empresas ser más competitivas
+5,57,Femenino,Chile,Es esencial para entender grandes volúmenes de información
+6,39,Masculino,Chile,Fundamental para el desarrollo de IA
+7,46,Femenino,Paraguay,Genera nuevas profesiones y oportunidades
+8,43,Masculino,Uruguay,Necesita mejor regulación en privacidad de datos
+9,63,Femenino,Chile,Facilita la visualización de complejas redes de datos
+10,20,Femenino,Argentina,Puede ser abrumador pero es fundamental
+11,40,Masculino,Argentina,Puede ser usado para mejorar la sociedad
+12,53,Masculino,Uruguay,Fundamental para el desarrollo de IA
+13,59,Femenino,Paraguay,Espero que democratice el acceso a la información
+14,34,Masculino,Brasil,Promete mejoras significativas en automatización
+15,51,Masculino,Uruguay,Big Data es revolucionario para los negocios
+16,62,Masculino,Chile,Permite a las empresas ser más competitivas
+17,47,Masculino,Chile,Necesita mejor regulación en privacidad de datos
+18,47,Masculino,Uruguay,Es el futuro del procesamiento de datos
+19,51,Femenino,Argentina,Transforma completamente la industria tecnológica
+20,39,Femenino,Uruguay,Necesario para decisiones basadas en datos
+21,59,Femenino,Argentina,Permite a las empresas ser más competitivas
+22,47,Masculino,Uruguay,Genera nuevas profesiones y oportunidades
+23,55,Masculino,Paraguay,Permite a las empresas ser más competitivas
+24,21,Masculino,Argentina,Debe ser usado responsablemente
+25,46,Masculino,Paraguay,Big Data es revolucionario para los negocios
+26,48,Femenino,Uruguay,Permite a las empresas ser más competitivas
+27,30,Femenino,Argentina,Es esencial para entender grandes volúmenes de información
+28,37,Masculino,Brasil,Necesita mejor regulación en privacidad de datos
+29,53,Femenino,Argentina,Revitaliza las estrategias de marketing
+30,33,Masculino,Chile,Espero que democratice el acceso a la información
+31,49,Femenino,Uruguay,Debe ser usado responsablemente
+32,21,Femenino,Chile,Fundamental para el desarrollo de IA
+33,27,Masculino,Chile,Necesita mejor regulación en privacidad de datos
+34,45,Femenino,Argentina,Necesita mejor regulación en privacidad de datos
+35,18,Masculino,Paraguay,Fundamental para el desarrollo de IA
+36,57,Masculino,Chile,Es el futuro del procesamiento de datos
+37,52,Femenino,Paraguay,Debe ser usado responsablemente
+38,27,Masculino,Brasil,Transforma completamente la industria tecnológica
+39,49,Femenino,Paraguay,Promete mejoras significativas en automatización
+40,24,Femenino,Paraguay,Es esencial para entender grandes volúmenes de información
+41,39,Masculino,Uruguay,Revitaliza las estrategias de marketing
+42,27,Femenino,Argentina,Necesario para decisiones basadas en datos
+43,21,Masculino,Argentina,Facilita la visualización de complejas redes de datos
+44,48,Masculino,Brasil,Facilita la visualización de complejas redes de datos
+45,55,Femenino,Brasil,Fundamental para el desarrollo de IA
+46,41,Femenino,Brasil,Necesario para decisiones basadas en datos
+47,18,Femenino,Argentina,Facilita la visualización de complejas redes de datos
+48,26,Masculino,Paraguay,Revitaliza las estrategias de marketing
+49,47,Masculino,Argentina,Transforma completamente la industria tecnológica
+50,46,Masculino,Argentina,Puede ser abrumador pero es fundamental
+51,63,Masculino,Argentina,Promete mejoras significativas en automatización
+52,57,Femenino,Argentina,Es esencial para entender grandes volúmenes de información
+53,27,Femenino,Chile,Necesario para decisiones basadas en datos
+54,38,Femenino,Argentina,Es esencial para entender grandes volúmenes de información
+55,63,Femenino,Argentina,Puede ser intimidante al principio
+56,44,Femenino,Chile,Transforma completamente la industria tecnológica
+57,46,Masculino,Brasil,Transforma completamente la industria tecnológica
+58,61,Masculino,Brasil,Big Data es revolucionario para los negocios
+59,19,Masculino,Chile,Debe ser usado responsablemente
+60,46,Femenino,Chile,Fundamental para el desarrollo de IA
+61,54,Femenino,Paraguay,Revitaliza las estrategias de marketing
+62,22,Femenino,Argentina,Necesita mejor regulación en privacidad de datos
+63,24,Masculino,Brasil,Necesario para decisiones basadas en datos
+64,49,Femenino,Argentina,Requiere habilidades especializadas para su manejo
+65,56,Femenino,Paraguay,Debe ser usado responsablemente
+66,21,Masculino,Argentina,Necesario para decisiones basadas en datos
+67,49,Femenino,Argentina,Permite a las empresas ser más competitivas
+68,29,Masculino,Brasil,Fundamental para el desarrollo de IA
+69,61,Femenino,Brasil,Revitaliza las estrategias de marketing
+70,22,Masculino,Chile,Transforma completamente la industria tecnológica
+71,42,Masculino,Chile,Puede ser usado para mejorar la sociedad
+72,36,Masculino,Argentina,Debe ser usado responsablemente
+73,25,Femenino,Argentina,Es esencial para entender grandes volúmenes de información
+74,25,Masculino,Brasil,Big Data es revolucionario para los negocios
+75,42,Femenino,Brasil,Requiere habilidades especializadas para su manejo
+76,63,Femenino,Argentina,Fundamental para el desarrollo de IA
+77,55,Femenino,Chile,Puede ser intimidante al principio
+78,22,Masculino,Chile,Necesario para decisiones basadas en datos
+79,20,Masculino,Chile,Su importancia crecerá exponencialmente en el futuro
+80,36,Femenino,Chile,Puede ser usado para mejorar la sociedad
+81,31,Masculino,Brasil,Debe ser usado responsablemente
+82,64,Femenino,Uruguay,Espero que democratice el acceso a la información
+83,36,Masculino,Paraguay,Necesario para decisiones basadas en datos
+84,46,Femenino,Chile,Necesita mejor regulación en privacidad de datos
+85,38,Femenino,Uruguay,Espero que democratice el acceso a la información
+86,61,Masculino,Paraguay,Es esencial para entender grandes volúmenes de información
+87,52,Masculino,Chile,Permite a las empresas ser más competitivas
+88,43,Femenino,Chile,Genera nuevas profesiones y oportunidades
+89,24,Femenino,Brasil,Big Data es revolucionario para los negocios
+90,36,Femenino,Uruguay,Puede ser abrumador pero es fundamental
+91,39,Masculino,Uruguay,Espero que democratice el acceso a la información
+92,64,Femenino,Uruguay,Genera nuevas profesiones y oportunidades
+93,59,Masculino,Brasil,Puede ser usado para mejorar la sociedad
+94,24,Femenino,Uruguay,Promete mejoras significativas en automatización
+95,34,Masculino,Paraguay,Puede ser intimidante al principio
+96,18,Femenino,Argentina,Es esencial para entender grandes volúmenes de información
+97,59,Masculino,Brasil,Necesario para decisiones basadas en datos
+98,49,Femenino,Chile,Espero que democratice el acceso a la información
+99,41,Femenino,Uruguay,Fundamental para el desarrollo de IA
+100,23,Masculino,Uruguay,Fundamental para el desarrollo de IA
+101,48,Femenino,Uruguay,Necesita mejor regulación en privacidad de datos
+102,32,Femenino,Uruguay,Facilita la visualización de complejas redes de datos
+103,47,Masculino,Paraguay,Necesario para decisiones basadas en datos
+104,20,Masculino,Chile,Permite a las empresas ser más competitivas
+105,41,Femenino,Chile,Fundamental para el desarrollo de IA
+106,60,Masculino,Uruguay,Puede ser abrumador pero es fundamental
+107,41,Masculino,Uruguay,Fundamental para el desarrollo de IA
+108,31,Masculino,Argentina,Permite a las empresas ser más competitivas
+109,32,Femenino,Chile,Revitaliza las estrategias de marketing
+110,22,Femenino,Argentina,Facilita la visualización de complejas redes de datos
+111,46,Femenino,Paraguay,Espero que democratice el acceso a la información
+112,32,Femenino,Paraguay,Permite a las empresas ser más competitivas
+113,55,Masculino,Uruguay,Transforma completamente la industria tecnológica
+114,47,Masculino,Paraguay,Revitaliza las estrategias de marketing
+115,63,Masculino,Argentina,Puede ser intimidante al principio
+116,56,Masculino,Chile,Big Data es revolucionario para los negocios
+117,43,Masculino,Argentina,Puede ser usado para mejorar la sociedad
+118,57,Masculino,Argentina,Puede ser usado para mejorar la sociedad
+119,19,Femenino,Brasil,Es el futuro del procesamiento de datos
+120,31,Femenino,Argentina,Transforma completamente la industria tecnológica
+121,21,Femenino,Paraguay,Necesario para decisiones basadas en datos
+122,28,Masculino,Uruguay,Es esencial para entender grandes volúmenes de información
+123,64,Masculino,Argentina,Puede ser usado para mejorar la sociedad
+124,23,Femenino,Brasil,Es clave para el análisis predictivo
+125,20,Femenino,Argentina,Revitaliza las estrategias de marketing
+126,47,Masculino,Argentina,Requiere habilidades especializadas para su manejo
+127,50,Masculino,Chile,Puede ser intimidante al principio
+128,37,Femenino,Chile,Fundamental para el desarrollo de IA
+129,34,Masculino,Chile,Promete mejoras significativas en automatización
+130,52,Femenino,Uruguay,Necesita mejor regulación en privacidad de datos
+131,24,Femenino,Brasil,Puede ser intimidante al principio
+132,47,Femenino,Chile,Necesario para decisiones basadas en datos
+133,28,Masculino,Uruguay,Permite a las empresas ser más competitivas
+134,36,Masculino,Paraguay,Fundamental para el desarrollo de IA
+135,40,Masculino,Uruguay,Es clave para el análisis predictivo
+136,23,Femenino,Brasil,Revitaliza las estrategias de marketing
+137,55,Masculino,Argentina,Debe ser usado responsablemente
+138,38,Masculino,Paraguay,Es el futuro del procesamiento de datos
+139,50,Femenino,Uruguay,Es esencial para entender grandes volúmenes de información
+140,52,Masculino,Chile,Genera nuevas profesiones y oportunidades
+141,54,Femenino,Paraguay,Fundamental para el desarrollo de IA
+142,56,Femenino,Brasil,Puede ser usado para mejorar la sociedad
+143,48,Masculino,Paraguay,Transforma completamente la industria tecnológica
+144,48,Masculino,Uruguay,Requiere habilidades especializadas para su manejo
+145,22,Masculino,Argentina,Necesita mejor regulación en privacidad de datos
+146,31,Masculino,Argentina,Revitaliza las estrategias de marketing
+147,64,Masculino,Brasil,Es esencial para entender grandes volúmenes de información
+148,28,Masculino,Chile,Su importancia crecerá exponencialmente en el futuro
+149,29,Masculino,Uruguay,Puede ser intimidante al principio
+150,34,Femenino,Uruguay,Promete mejoras significativas en automatización
+151,20,Femenino,Argentina,Permite a las empresas ser más competitivas
+152,24,Femenino,Paraguay,Puede ser intimidante al principio
+153,60,Masculino,Paraguay,Facilita la visualización de complejas redes de datos
+154,21,Femenino,Argentina,Puede ser usado para mejorar la sociedad
+155,26,Masculino,Uruguay,Es esencial para entender grandes volúmenes de información
+156,25,Masculino,Chile,Puede ser abrumador pero es fundamental
+157,55,Masculino,Paraguay,Puede ser usado para mejorar la sociedad
+158,39,Masculino,Brasil,Su importancia crecerá exponencialmente en el futuro
+159,50,Femenino,Uruguay,Promete mejoras significativas en automatización
+160,53,Femenino,Brasil,Debe ser usado responsablemente
+161,54,Masculino,Uruguay,Puede ser abrumador pero es fundamental
+162,37,Masculino,Chile,Espero que democratice el acceso a la información
+163,28,Femenino,Uruguay,Debe ser usado responsablemente
+164,36,Femenino,Uruguay,Fundamental para el desarrollo de IA
+165,50,Masculino,Argentina,Revitaliza las estrategias de marketing
+166,38,Masculino,Brasil,Es esencial para entender grandes volúmenes de información
+167,25,Femenino,Argentina,Facilita la visualización de complejas redes de datos
+168,37,Femenino,Argentina,Puede ser usado para mejorar la sociedad
+169,29,Femenino,Chile,Revitaliza las estrategias de marketing
+170,58,Masculino,Paraguay,Puede ser abrumador pero es fundamental
+171,45,Femenino,Brasil,Fundamental para el desarrollo de IA
+172,35,Femenino,Argentina,Necesita mejor regulación en privacidad de datos
+173,51,Masculino,Argentina,Necesario para decisiones basadas en datos
+174,35,Femenino,Uruguay,Transforma completamente la industria tecnológica
+175,59,Femenino,Brasil,Espero que democratice el acceso a la información
+176,22,Femenino,Paraguay,Necesario para decisiones basadas en datos
+177,22,Femenino,Paraguay,Puede ser usado para mejorar la sociedad
+178,29,Masculino,Brasil,Puede ser abrumador pero es fundamental
+179,32,Masculino,Chile,Permite a las empresas ser más competitivas
+180,59,Femenino,Chile,Big Data es revolucionario para los negocios
+181,27,Femenino,Chile,Necesita mejor regulación en privacidad de datos
+182,48,Femenino,Paraguay,Necesita mejor regulación en privacidad de datos
+183,26,Femenino,Argentina,Debe ser usado responsablemente
+184,19,Masculino,Uruguay,Fundamental para el desarrollo de IA
+185,46,Femenino,Uruguay,Permite a las empresas ser más competitivas
+186,60,Femenino,Paraguay,Necesario para decisiones basadas en datos
+187,27,Masculino,Paraguay,Facilita la visualización de complejas redes de datos
+188,26,Femenino,Brasil,Es esencial para entender grandes volúmenes de información
+189,34,Femenino,Chile,Su importancia crecerá exponencialmente en el futuro
+190,64,Masculino,Paraguay,Puede ser abrumador pero es fundamental
+191,25,Femenino,Paraguay,Fundamental para el desarrollo de IA
+192,18,Femenino,Brasil,Requiere habilidades especializadas para su manejo
+193,36,Femenino,Chile,Revitaliza las estrategias de marketing
+194,59,Masculino,Chile,Es clave para el análisis predictivo
+195,46,Masculino,Chile,Es el futuro del procesamiento de datos
+196,29,Masculino,Argentina,Facilita la visualización de complejas redes de datos
+197,44,Femenino,Argentina,Promete mejoras significativas en automatización
+198,27,Femenino,Paraguay,Promete mejoras significativas en automatización
+199,49,Masculino,Uruguay,Puede ser intimidante al principio
+200,25,Masculino,Chile,Puede ser abrumador pero es fundamental
