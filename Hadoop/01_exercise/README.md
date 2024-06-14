@@ -181,7 +181,7 @@ volvemos al navegador, a la ruta `http://localhost:9870`
 
 vamos a Utilities &rarr; Broswe the file system y luego a la ruta user/root como se muestra en las imágenes:
 
-![01_exercise](/hadoop1.png)
+![01_exercise](Hadoop/01_exercise/hadoop1.png)
 
 ![hadoop2](/hadoop2.png)
 
