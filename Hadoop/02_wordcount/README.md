@@ -48,11 +48,27 @@ Edita cada archivo con nano y agrega un texto breve con palabras repetidas
 Ingresa el texto 
 
 `noticia.txt`
+
 Ingresa el texto 
 
 `song.txt`
+
 Ingresa el texto 
 
+Recuerda: Guarda los cambios con Ctrl + O, presiona Enter, y sal con Ctrl + X.
+
+
+### Ejecutar el conteo de palabras
+
+Para cada archivo, ejecuta el siguiente comando: **`hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount <archivo>.txt <output>`**
+
+Ejemplo:
+
+`hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount cuento.txt output_cuento`
+
+`hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount noticia.txt output_noticia`
+
+`hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount song.txt output_song`
 ` `
 ` `
 
