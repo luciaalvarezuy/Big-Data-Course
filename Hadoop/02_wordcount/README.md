@@ -60,15 +60,78 @@ Recuerda: Guarda los cambios con Ctrl + O, presiona Enter, y sal con Ctrl + X.
 
 ### Ejecutar el conteo de palabras
 
-Para cada archivo, ejecuta el siguiente comando: **`hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount <archivo>.txt <output>`**
-
-Ejemplo:
+Para cada archivo, ejecuta el siguiente comando: **`hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount <archivo>.txt <output>`**  Ejemplo:
 
 `hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount cuento.txt output_cuento`
 
 `hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount noticia.txt output_noticia`
 
 `hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount song.txt output_song`
-` `
-` `
+
+
+### Si falta el archivo JAR
+
+Si aparece este mensaje de error:
+
+**`JAR does not exist or is not a normal file: /home/eurecat/ejemplo_mapreduce/hadoop-mapreduce-examples-3.3.6.jar`**
+
+Significa que el archivo .jar no se encuentra descargado en tu carpeta. Verifica si existe:
+
+`ls -l`
+
+Si no está, descárgalo:
+
+`wget https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-examples/3.3.6/hadoop-mapreduce-examples-3.3.6.jar`
+
+Confirma la descarga:
+
+`ls -l hadoop-mapreduce-examples-3.3.6.jar`
+
+Ejecuta nuevamente:
+
+`hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount cuento.txt output_cuento`
+
+### Visualizar los resultados
+
+Cada vez que Hadoop ejecuta un job, crea una carpeta de salida con los resultados. Para verlos, ejecuta:
+
+`cat output_cuento/part-r-00000`
+
+`cat output_noticia/part-r-00000`
+
+`cat output_song/part-r-00000`
+
+Si aparece este error:
+
+**`cat: output_noticia`**: Es un directorio
+
+**`cat: /part-r-00000`**: No existe el archivo o el directorio
+
+Significa que escribiste mal la ruta. Debe ir todo junto:
+
+`cat output_noticia/part-r-00000`
+
+Recuerda que Hadoop guarda los resultados dentro de una carpeta, y dentro de esa carpeta se encuentra el archivo part-r-00000.
+
+### Evaluar los resultados
+
+Reflexiona sobre los resultados obtenidos:
+- ¿Qué texto tiene más repeticiones de palabras?
+- ¿Qué palabra aparece más veces?
+- ¿Qué sucede si combinamos los tres textos en un solo archivo?
+
+Para probarlo:
+
+`cat cuento.txt noticia.txt song.txt > combinado.txt`
+
+`hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount combinado.txt output_combinado`
+
+`cat output_combinado/part-r-00000`
+
+---
+### Conclusión
+
+Este ejercicio muestra cómo Hadoop divide, distribuye y combina resultados para procesar grandes volúmenes de texto de manera eficiente.
+
+El ejemplo WordCount es la base para entender cómo MapReduce trabaja con pares clave–valor, y cómo una tarea simple (como contar palabras) se puede escalar a millones de registros distribuidos en distintos nodos.
 
