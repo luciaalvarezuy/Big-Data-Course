@@ -20,6 +20,7 @@ Significa que la carpeta ya existe. Podés resolverlo de dos formas:
 ### Opción 1: Entrar en la carpeta existente
 
 ` cd ejemplo_mapreduce`
+
 `ls -l `
 
 ### Opción 2: Borrar y crear una nueva (⚠️ elimina todo lo anterior)
