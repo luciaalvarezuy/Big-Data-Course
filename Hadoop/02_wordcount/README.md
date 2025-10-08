@@ -4,6 +4,8 @@
 
 Aplicar el programa WordCount de Hadoop para comparar la frecuencia de palabras en distintos textos y comprender el funcionamiento del modelo MapReduce.
 
+---
+
 ### Preparar el ambiente para trabajar
 
 Asegúrate de tener Hadoop instalado y configurado correctamente.
@@ -35,6 +37,8 @@ Luego creamos un archivo de texto de prueba:
 
 `nano data.txt`
 
+---
+
 ### Crear los archivos de texto
 
 Crea tres archivos dentro del directorio ejemplo_mapreduce:
@@ -57,6 +61,7 @@ Ingresa el texto
 
 Recuerda: Guarda los cambios con Ctrl + O, presiona Enter, y sal con Ctrl + X.
 
+---
 
 ### Ejecutar el conteo de palabras
 
@@ -91,6 +96,8 @@ Ejecuta nuevamente:
 
 `hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount cuento.txt output_cuento`
 
+---
+
 ### Visualizar los resultados
 
 Cada vez que Hadoop ejecuta un job, crea una carpeta de salida con los resultados. Para verlos, ejecuta:
@@ -112,6 +119,8 @@ Significa que escribiste mal la ruta. Debe ir todo junto:
 `cat output_noticia/part-r-00000`
 
 Recuerda que Hadoop guarda los resultados dentro de una carpeta, y dentro de esa carpeta se encuentra el archivo part-r-00000.
+
+---
 
 ### Evaluar los resultados
 
