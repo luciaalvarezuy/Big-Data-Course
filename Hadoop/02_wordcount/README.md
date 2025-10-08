@@ -27,9 +27,6 @@ Significa que la carpeta ya existe. Podés resolverlo de dos formas:
 
 `cd ejemplo_mapreduce`
 
-Luego creamos un archivo de texto de prueba:
-
-`nano data.txt`
 
 ---
 
