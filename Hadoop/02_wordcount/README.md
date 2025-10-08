@@ -17,21 +17,42 @@ Si aparece este mensaje de error:
 
 Significa que la carpeta ya existe. Podés resolverlo de dos formas:
 
-### Opción 1: Entrar en la carpeta existente
+#### Opción 1: Entrar en la carpeta existente
 
 ` cd ejemplo_mapreduce`
 
 `ls -l `
 
-### Opción 2: Borrar y crear una nueva (⚠️ elimina todo lo anterior)
+#### Opción 2: Borrar y crear una nueva (⚠️ elimina todo lo anterior)
 
-` `
+` rm -r ejemplo_mapreduce`
 
-### 
+`mkdir ejemplo_mapreduce`
 
-` `
-` `
-` `
+`cd ejemplo_mapreduce`
+
+Luego creamos un archivo de texto de prueba:
+
+`nano data.txt`
+
+### Crear los archivos de texto
+
+Crea tres archivos dentro del directorio ejemplo_mapreduce:
+
+`touch cuento.txt noticia.txt song.txt`
+
+Edita cada archivo con nano y agrega un texto breve con palabras repetidas
+
+`cuento.txt`
+
+Ingresa el texto 
+
+`noticia.txt`
+Ingresa el texto 
+
+`song.txt`
+Ingresa el texto 
+
 ` `
 ` `
 
