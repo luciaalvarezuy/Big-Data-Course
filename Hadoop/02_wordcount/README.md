@@ -19,9 +19,27 @@ Si aparece este mensaje de error:
 
 Significa que la carpeta ya existe. Podés resolverlo de dos formas:
 
-#### Opción 1: Borrar y crear una nueva (⚠️ elimina todo lo anterior)
+#### Opción 1: Borrar y crear una nueva (elimina todo lo anterior)
 
 ` rm -r ejemplo_mapreduce`
+
+`mkdir ejemplo_mapreduce`
+
+`cd ejemplo_mapreduce`
+
+
+
+#### Opción 2 — Si querés borrar todo y empezar desde cero
+
+Desde tu carpeta base:
+
+`cd ~`
+
+Borrar completamente la carpeta (⚠️ esto elimina todo su contenido):
+
+`rm -rf ejemplo_mapreduce`
+
+Crear una nueva carpeta limpia:
 
 `mkdir ejemplo_mapreduce`
 
