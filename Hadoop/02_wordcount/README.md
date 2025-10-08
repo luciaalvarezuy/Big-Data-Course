@@ -38,15 +38,15 @@ Crea tres archivos dentro del directorio ejemplo_mapreduce:
 
 Edita cada archivo con nano y agrega un texto breve con palabras repetidas
 
-`cuento.txt`
+`nano cuento.txt`
 
 Ingresa el texto 
 
-`noticia.txt`
+`nano noticia.txt`
 
-Ingresa el texto 
+Ingresa el texto
 
-`song.txt`
+`nano song.txt`
 
 Ingresa el texto 
 
