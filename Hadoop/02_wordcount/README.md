@@ -1,4 +1,4 @@
-# Práctico Hadoop – WordCount (Conteo de palabras)
+# Práctico Hadoop – WordCount (Contar palabras)
 
 ## Objetivo
 
