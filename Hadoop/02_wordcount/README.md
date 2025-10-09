@@ -89,7 +89,7 @@ Si aparece este mensaje de error:
 
 **`JAR does not exist or is not a normal file: /home/eurecat/ejemplo_mapreduce/hadoop-mapreduce-examples-3.3.6.jar`**
 
-Significa que el archivo .jar no se encuentra descargado en tu carpeta. Verifica si existe:
+Significa que el archivo .jar no se encuentra en la ruta actual. Verifica si existe:
 
 `ls -l`
 
