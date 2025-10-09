@@ -209,7 +209,7 @@ y nos movemos al directorio utilizando el comando:
 
 ahora procedemos a descargar el archivo desde github con el comando:
 
-`sudo wget https://raw.githubusercontent.com/luciaalvarezuy/Big_data_test/main/BigData_Custom_Sample.csv`
+`sudo wget https://github.com/luciaalvarezuy/Big-Data-Course/blob/main/Hadoop/01_exercise/BigData_Custom_Sample.csv`
 
 podemos ver este archivo en vs code utilizando el comando `code .`
 
