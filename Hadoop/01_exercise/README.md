@@ -181,8 +181,7 @@ volvemos al navegador, a la ruta `http://localhost:9870`
 
 vamos a Utilities &rarr; Broswe the file system y luego a la ruta user/root como se muestra en las imágenes:
 
-![hadoop1](https://github.com/luciaalvarezuy/Clase_practica_hadoop/raw/main/hadoop1.png)
-
+![hadoop1](https://github.com/luciaalvarezuy/Big-Data-Course/blob/main/Hadoop/01_exercise/hadoop1.png)
 
 ![01_exercise](https://github.com/luciaalvarezuy/Big-Data-Course/blob/main/Hadoop/01_exercise/hadoop2.png)
 
