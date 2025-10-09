@@ -209,8 +209,8 @@ y nos movemos al directorio utilizando el comando:
 
 ahora procedemos a descargar el archivo desde github con el comando:
 
-`cd /home/project/data
-wget -O BigData_Custom_Sample.csv \
+`cd /home/project/data`
+`wget -O BigData_Custom_Sample.csv \
 https://raw.githubusercontent.com/luciaalvarezuy/Big-Data-Course/main/Hadoop/01_exercise/BigData_Custom_Sample.csv`
 
 
