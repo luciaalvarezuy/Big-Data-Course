@@ -270,6 +270,82 @@ Podemos ver los datos cargado ejecutando:
 
 `SELECT * FROM opiniones;`
 
+
+
+# Prácticas con Hive
+
+A continuación se incluyen ejercicios guiados y simples para practicar **consultas básicas en Hive** sobre la tabla `opiniones`.  
+Cada paso muestra el comando exacto para copiar y pegar.
+
+---
+
+## Verificación rápida
+
+`SELECT * FROM opiniones LIMIT 10;`
+
+---
+
+## Ejercicio A — Agregaciones básicas
+
+1. Total de opiniones:  
+   `SELECT COUNT(*) AS total_opiniones FROM opiniones;`
+
+2. Edad mínima, máxima y promedio:  
+   `SELECT MIN(edad) AS edad_min, MAX(edad) AS edad_max, AVG(edad) AS edad_prom FROM opiniones;`
+
+3. Distribución por sexo:  
+   `SELECT sexo, COUNT(*) AS cantidad FROM opiniones GROUP BY sexo ORDER BY cantidad DESC;`
+
+---
+
+## Ejercicio B — Filtros y ordenamientos
+
+1. Opiniones de mayores de 30 años:  
+   `SELECT id, edad, pais_donde_vive FROM opiniones WHERE edad > 30 ORDER BY edad DESC;`
+
+2. Personas entre 25 y 40 años (rango):  
+   `SELECT id, edad, sexo FROM opiniones WHERE edad BETWEEN 25 AND 40 ORDER BY edad;`
+
+---
+
+## Ejercicio C — Crear tabla a partir de una consulta
+
+Crear una tabla con personas mayores de 30 para trabajar aparte:
+
+`CREATE TABLE opiniones_mayores30 AS SELECT id, edad, sexo, pais_donde_vive, opinion_big_data FROM opiniones WHERE edad > 30;`
+
+Verificar:
+
+`SHOW TABLES;`  
+`SELECT COUNT(*) FROM opiniones_mayores30;`  
+`SELECT * FROM opiniones_mayores30 LIMIT 10;`
+
+---
+## Ejercicio D — Top-N por país
+
+Top 5 países con más opiniones:
+
+`SELECT pais_donde_vive, COUNT(*) AS cantidad FROM opiniones GROUP BY pais_donde_vive ORDER BY cantidad DESC LIMIT 5;`
+
+---
+
+## Ejercicio E — Conteos rápidos de valores distintos
+
+Países distintos:  
+
+   `SELECT COUNT(DISTINCT pais_donde_vive) AS paises_distintos FROM opiniones;`
+
+---
+
+## Nota final
+
+Si alguna sentencia devuelve vacío, revisa la ortografía de las columnas (`id`, `edad`, `sexo`, `pais_donde_vive`, `opinion_big_data`) y que los datos se hayan cargado correctamente con:  
+
+`SELECT * FROM opiniones LIMIT 10;`
+
+
+
+
 Para salir de la terminal de beehive podemos utilizar **ctrl + D**
 
 Internamente, Hive utiliza MapReduce para procesar y analizar datos. Cuando ejecutas una consulta de Hive, esta genera trabajos de MapReduce que se ejecutan en el clúster de Hadoop.
