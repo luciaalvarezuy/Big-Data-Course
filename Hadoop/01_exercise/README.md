@@ -262,7 +262,7 @@ Si todo es correcto tendríamos que ver el siguiente resultado:
 
 ![hive2](https://github.com/luciaalvarezuy/Big-Data-Course/blob/main/Hadoop/01_exercise/hive2.png)
 
-Ahora podemos cargar la que descargamos en el primer paso en la tabla utilizando el siguiente comando:
+Ahora podemos cargar la tabla que descargamos en el primer paso en la tabla utilizando el siguiente comando:
 
 `LOAD DATA INPATH '/hive_custom_data/BigData_Custom_Sample.csv' INTO TABLE opiniones;`
 
