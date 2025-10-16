@@ -318,7 +318,11 @@ Crear una tabla con personas mayores de 30 para trabajar aparte:
 Verificar:
 
 `SHOW TABLES;`  
-`SELECT COUNT(*) FROM opiniones_mayores30;`  
+
+
+`SELECT COUNT(*) FROM opiniones_mayores30;` 
+
+
 `SELECT * FROM opiniones_mayores30 LIMIT 10;`
 
 ---
