@@ -270,7 +270,8 @@ Podemos ver los datos cargado ejecutando:
 
 `SELECT * FROM opiniones;`
 
-
+---
+---
 
 # Prácticas con Hive
 
