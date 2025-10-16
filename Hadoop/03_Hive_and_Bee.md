@@ -29,7 +29,7 @@ Si aún no tienes Hive en ejecución, abre una terminal y crea el contenedor con
 
 
 ---
-
+---
 
 ## Error común: "The container name '/myhiveserver' is already in use"
 
@@ -58,7 +58,7 @@ Si queremos **borrarlo por completo**, ejecutamos:
 
 `sudo docker rm -f myhiveserver`
 
-> 🔸 El parámetro `-f` fuerza el borrado incluso si el contenedor está en ejecución.
+> El parámetro `-f` fuerza el borrado incluso si el contenedor está en ejecución.
 
 Si preferimos **mantenerlo pero cambiarle el nombre**, podemos usar:
 
@@ -83,6 +83,8 @@ Una vez borrado o renombrado el anterior, ya podemos ejecutar el comando origina
 >
 > De esta forma, se aseguran de comenzar desde cero y evitar conflictos con contenedores anteriores.
 
+
+---
 
 ---
 
