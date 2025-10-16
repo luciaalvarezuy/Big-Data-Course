@@ -219,7 +219,9 @@ Ahora que tenemos la información podemos descargar la imagen de docker de apach
 
 `sudo docker pull apache/hive:4.0.0-alpha-1`
 
-Ahora que tenemos la imagen descargada podemos chequearlo utilizando `sudo docker images`
+Ahora que tenemos la imagen descargada podemos chequearlo utilizando 
+
+`sudo docker images`
 
 Para ejecutar la misma podemos ejecutar:
 
