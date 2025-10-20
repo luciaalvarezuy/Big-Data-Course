@@ -161,13 +161,13 @@ Mostrar solo las opiniones de personas mayores de 30 años.
 `Pensar en el código`
 
 ---
-## Ejercicio 4 — Conteos rápidos de valores distintos
+## Ejercicio 5 — Conteos rápidos de valores distintos
 Etiquetas de sexo distintas:  
 
 `Pensar en el código`
 
 ---
-## Ejercicio 5 — Crear tabla con opiniones de un país específico
+## Ejercicio 6 — Crear tabla con opiniones de un país específico
 
 Crear una tabla nueva llamada opiniones_espana que contenga solo los registros de personas que viven en España.
 
