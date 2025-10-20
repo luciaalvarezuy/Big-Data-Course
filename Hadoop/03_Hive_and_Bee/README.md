@@ -264,23 +264,32 @@ Visualizar los primeros registros para comprobar que los datos sean correctos:
 
 ---
 
+---
+
 ### Recomendación
 
-> Antes de cada práctica, es buena idea limpiar el entorno:
-> 
-> `sudo docker ps -a`  
-> `sudo docker rm -f myhiveserver`
->
-> De esta forma, se aseguran de comenzar desde cero y evitar conflictos con contenedores anteriores.
+Antes de comenzar cada práctica, es recomendable limpiar el entorno de Docker para evitar errores con contenedores anteriores.
+Esto garantiza que todos trabajen con un entorno limpio y sin conflictos residuales.
+
+Pasos sugeridos:
+
+`sudo docker ps -a`  
+
+`sudo docker rm -f myhiveserver`
+
+De esta forma, se aseguran de empezar desde cero, evitando problemas con contenedores previos o servicios que quedaron activos.
 
 ---
+
+Antes de crear un nuevo contenedor, verificá siempre si el puerto 10000 está ocupado (es el que utiliza HiveServer2 para conectarse con Beeline):
+
+`sudo lsof -i :10000`
+
+Si aparece un proceso activo, significa que el puerto está en uso —probablemente por otro contenedor de Hive—.
+En ese caso, podés:
+
+- Detener el proceso o contenedor que lo está usando, o
+
+- Usar otro puerto distinto (por ejemplo, 10001) para evitar conflictos.
+
 ---
-
-Antes de crear un nuevo contenedor, verificá siempre si el puerto 10000 está ocupado:
-
-```bash
-sudo lsof -i :10000
-```
-
-Si aparece un proceso activo, detenelo o usá otro puerto diferente (por ejemplo, `10001`) para evitar conflictos.
-
