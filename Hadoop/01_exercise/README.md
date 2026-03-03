@@ -18,26 +18,16 @@ Ahora vamos a proceder a instalar hadoop para eso vamos a descargarlo y descompr
 
 --- 
 ```diff
-Nota
+Nota: ⚠️ Si tar xzf hadoop-3.3.6.tar.gz parece quedar “colgado”
 
-⚠️ Si tar xzf hadoop-3.3.6.tar.gz parece quedar “colgado”
+Al ejecutar:    ` tar xzf hadoop-3.3.6.tar.gz `
 
-Al ejecutar:
+Puede parecer que la terminal queda bloqueada o que no está haciendo nada. Esto es normal.
 
-    tar xzf hadoop-3.3.6.tar.gz
-
-Puede parecer que la terminal queda bloqueada o que no está haciendo
-nada.
-
-Esto es normal.
-
-Por defecto, el comando tar no muestra ningún mensaje mientras está
-descomprimiendo.
+Por defecto, el comando tar no muestra ningún mensaje mientras está descomprimiendo.
 Trabaja en silencio y vuelve al prompt cuando termina.
 
-----
-
-✅ ¿Cómo verificar que funcionó?
+¿Cómo verificar que funcionó?
 
 Luego de ejecutar el comando, escribir:
 
