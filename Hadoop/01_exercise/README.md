@@ -190,6 +190,56 @@ Podemos ver los contenedores desplegados utilizando
 
 `sudo docker ps`
 
+------------
+Componentes principales
+
+🗂 NameNode
+Es el “cerebro” de HDFS (Hadoop Distributed File System).
+-   Administra los metadatos.
+-   Sabe dónde están almacenados los bloques de datos.
+-   No guarda los datos directamente.
+
+------------------------------------------------------------------------
+💾 DataNode
+Es el encargado de almacenar físicamente los bloques de datos.
+En un cluster real existirían múltiples DataNodes distribuidos en distintas máquinas.
+Aquí estamos simulando uno dentro de Docker.
+
+------------------------------------------------------------------------
+🎛 ResourceManager
+Forma parte de YARN.
+-   Gestiona los recursos del cluster (CPU y memoria).
+-   Decide cómo se distribuyen las tareas.
+
+------------------------------------------------------------------------
+⚙ NodeManager
+Ejecuta las tareas asignadas por el ResourceManager en cada nodo.
+
+------------------------------------------------------------------------
+Estado de los contenedores (STATUS)
+En la columna STATUS podemos ver algo como:
+    Up (healthy)
+
+Esto significa que:
+-   El contenedor está en ejecución.
+-   El servicio interno está funcionando correctamente.
+-   El healthcheck pasó sin errores.
+
+Si apareciera:
+-   Exited
+-   Restarting
+-   Unhealthy
+significaría que hay un problema en el servicio.
+
+------------------------------------------------------------------------
+Puertos expuestos (PORTS)
+En la columna PORTS vemos los puertos que permiten acceder a las interfaces web.
+
+Por ejemplo:
+-   9870 → Interfaz web del NameNode
+-   8088 → Interfaz web de YARN
+
+-------
 Ahora vamos al navegador y escribimos `http://localhost:9870` donde podemos ver el explorador web de Hadoop.
 
 ## Crear un archivo en HDFS.
