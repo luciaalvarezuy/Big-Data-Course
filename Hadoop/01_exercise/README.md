@@ -20,7 +20,7 @@ Ahora vamos a proceder a instalar hadoop para eso vamos a descargarlo y descompr
 ```diff
 Nota: ⚠️ Si tar xzf hadoop-3.3.6.tar.gz parece quedar “colgado”
 
-Al ejecutar:    ` tar xzf hadoop-3.3.6.tar.gz `
+Al ejecutar:     tar xzf hadoop-3.3.6.tar.gz 
 
 Puede parecer que la terminal queda bloqueada o que no está haciendo nada. Esto es normal.
 
@@ -29,17 +29,14 @@ Trabaja en silencio y vuelve al prompt cuando termina.
 
 ¿Cómo verificar que funcionó?
 
-Luego de ejecutar el comando, escribir:
+Luego de ejecutar el comando, escribir:    ls
 
-    ls
-
-Si aparece una carpeta llamada:
-
-    hadoop-3.3.6
+Si aparece una carpeta llamada:    hadoop-3.3.6
 
 entonces la extracción fue correcta.
+
 ```
-------
+
 
 `sudo mv hadoop-3.3.6 /opt/hadoop`
 
