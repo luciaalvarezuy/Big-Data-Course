@@ -133,13 +133,34 @@ También podemos ver esto en la interfaz gráfica utilizando.
 
 `nautilus .`
 
-Borrar la carpeta output si quieres ejecutar nuevamente el proceso.
+--- 
+```diff
+Importante: volver a ejecutar el WordCount
 
-Para salir del modo interfaz gráfica debemos ejecutar *Ctrl + C*
+Hadoop no permite sobrescribir la carpeta de salida.
+Si intentas ejecutar nuevamente:
 
-Pueden seguir cambiando el texto y ejecutando `hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount data.txt output` para testear diferentes resultados.
+`hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount data.txt output`
 
-Recuerda ingresar nuevamente:  `cat output/part-r-00000`
+obtendrás un error indicando que la carpeta output ya existe.
+
+Por lo tanto, antes de volver a ejecutar el proceso, es necesario eliminar la carpeta output:
+
+`rm -rf output`
+
+También podrás eliminar la carpeta "output" de forma manual.
+
+Luego podrás ejecutar nuevamente el job:
+
+`hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount data.txt output`
+
+Y consultar otra vez los resultados:
+
+`cat output/part-r-00000`
+
+```diff
+--- 
+
 
 # Configurar Nodos de Clúster en Hadoop Dockerizado
 
