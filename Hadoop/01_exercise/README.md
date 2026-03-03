@@ -316,7 +316,7 @@ Para ejecutar la misma podemos ejecutar:
 
 `sudo docker run -d -p 10000:10000 -p 10002:10002 --env SERVICE_NAME=hiveserver2 -v /home/project/data:/hive_custom_data --name myhiveserver apache/hive:4.0.0-alpha-1`
 
-Como puedes observar tenemos varias configuraciones procedemos a explicarlas:
+Tenemos varias configuraciones:
 
 - `-p 10000:10000 -p 10002:10002`: Se mapean los puertos del contenedor de docker con las de nuestro ordenador o vm. Es decir, el puerto 10000 del contenedor corresponde con el 10000 de nuestro ordenador y lo mismo para el 10002.
 - `--env SERVICE_NAME=hiveserver2`Simplemente seteamos la variable de entorno SERVICE_NAME
