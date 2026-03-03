@@ -37,7 +37,7 @@ entonces la extracción fue correcta.
 
 ```
 
-
+--- 
 `sudo mv hadoop-3.3.6 /opt/hadoop`
 
 Ahora debemos agregar las variables de hadoop al archivo de bash para esto debemos ejecutar.
