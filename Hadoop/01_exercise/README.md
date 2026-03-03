@@ -139,24 +139,20 @@ Importante: volver a ejecutar el WordCount
 
 Hadoop no permite sobrescribir la carpeta de salida.
 Si intentas ejecutar nuevamente:
-
-`hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount data.txt output`
+hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount data.txt output
 
 obtendrás un error indicando que la carpeta output ya existe.
 
 Por lo tanto, antes de volver a ejecutar el proceso, es necesario eliminar la carpeta output:
-
-`rm -rf output`
+rm -rf output
 
 También podrás eliminar la carpeta "output" de forma manual.
 
 Luego podrás ejecutar nuevamente el job:
-
-`hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount data.txt output`
+hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount data.txt output
 
 Y consultar otra vez los resultados:
-
-`cat output/part-r-00000`
+cat output/part-r-00000
 
 ```
 --- 
