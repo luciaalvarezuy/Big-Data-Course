@@ -17,6 +17,7 @@ Ahora vamos a proceder a instalar hadoop para eso vamos a descargarlo y descompr
 `tar xzf hadoop-3.3.6.tar.gz`
 
 --- 
+<span style="color:red">Este texto aparece en rojo</span>
 Nota
 
 ⚠️ Si tar xzf hadoop-3.3.6.tar.gz parece quedar “colgado”
@@ -47,7 +48,7 @@ Si aparece una carpeta llamada:
     hadoop-3.3.6
 
 entonces la extracción fue correcta.
-
+</span>
 ------
 
 `sudo mv hadoop-3.3.6 /opt/hadoop`
