@@ -16,6 +16,40 @@ Ahora vamos a proceder a instalar hadoop para eso vamos a descargarlo y descompr
 
 `tar xzf hadoop-3.3.6.tar.gz`
 
+--- 
+Nota
+
+⚠️ Si tar xzf hadoop-3.3.6.tar.gz parece quedar “colgado”
+
+Al ejecutar:
+
+    tar xzf hadoop-3.3.6.tar.gz
+
+Puede parecer que la terminal queda bloqueada o que no está haciendo
+nada.
+
+Esto es normal.
+
+Por defecto, el comando tar no muestra ningún mensaje mientras está
+descomprimiendo.
+Trabaja en silencio y vuelve al prompt cuando termina.
+
+----
+
+✅ ¿Cómo verificar que funcionó?
+
+Luego de ejecutar el comando, escribir:
+
+    ls
+
+Si aparece una carpeta llamada:
+
+    hadoop-3.3.6
+
+entonces la extracción fue correcta.
+
+------
+
 `sudo mv hadoop-3.3.6 /opt/hadoop`
 
 Ahora debemos agregar las variables de hadoop al archivo de bash para esto debemos ejecutar.
@@ -354,3 +388,8 @@ Si alguna sentencia devuelve vacío, revisa la ortografía de las columnas (`id`
 Para salir de la terminal de beehive podemos utilizar **ctrl + D**
 
 Internamente, Hive utiliza MapReduce para procesar y analizar datos. Cuando ejecutas una consulta de Hive, esta genera trabajos de MapReduce que se ejecutan en el clúster de Hadoop.
+
+---- 
+⛔ Si presionas CTRL + C
+
+Si interrumpiste el proceso, puede haber quedado una carpeta incompleta.
