@@ -158,7 +158,7 @@ Y consultar otra vez los resultados:
 
 `cat output/part-r-00000`
 
-```diff
+```
 --- 
 
 
