@@ -175,21 +175,23 @@ Este archivo contiene todas las palabras encontradas en los textos y la cantidad
 
 ###### 1. Ordenar los resultados por frecuencia
 
-De menor a mayor (orden ascendente)
-
 El archivo generado por Hadoop contiene dos columnas:
 
-- la palabra
+la palabra
 
-- la cantidad de veces que aparece
+la cantidad de veces que aparece
 
-Podemos ordenar los resultados para ver cuáles son las palabras más frecuentes. Para hacerlo, utilizamos el comando sort.
+Podemos ordenar los resultados para identificar cuáles son las palabras más frecuentes. Para hacerlo, utilizamos el comando sort.
 
-El siguiente comando ordena los resultados de mayor a menor según la frecuencia de aparición (segunda columna):
+**De menor a mayor (orden ascendente)**
+
+El siguiente comando ordena los resultados de menor a mayor según la frecuencia de aparición (segunda columna):
 
 `sort -k2 -n output_combinado/part-r-00000`
 
-De mayor a menor:
+**De mayor a menor (orden descendente)**
+
+Si queremos ver primero las palabras más frecuentes, podemos invertir el orden utilizando la opción `-r`:
 
 `sort -k2 -nr output_combinado/part-r-00000`
 
