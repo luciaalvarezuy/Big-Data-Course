@@ -82,6 +82,9 @@ Para cada archivo, ejecuta el siguiente comando: **`hadoop jar hadoop-mapreduce-
 
 `hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount song.txt output_song`
 
+Para hacerlo en una misma linea de código: 
+`rm -rf output_cuento output_noticia output_song && hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount cuento.txt output_cuento && hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount noticia.txt output_noticia && hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount song.txt output_song`
+
 ```diff
 ### Si falta el archivo JAR
 
