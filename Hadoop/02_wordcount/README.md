@@ -201,8 +201,24 @@ El siguiente comando muestra las 2 palabras más repetidas:
 
 `sort -k2 -nr output_combinado/part-r-00000 | head -2`
 
+###### 3. Guardar el resultado en un archivo
+Si queremos guardar el resultado del análisis en un archivo en lugar de mostrarlo solamente en pantalla, podemos utilizar el operador >.
 
----
+El siguiente comando ordena las palabras por frecuencia de mayor a menor, muestra las 2 palabras más repetidas, y guarda el resultado en un archivo llamado resultado_top.txt
+
+`sort -k2 -nr output_combinado/part-r-00000 | head -2 > resultado_top.txt`
+
+Podemos visualizar su contenido utilizando:
+
+`cat resultado_top.txt`
+
+###### 4. Cambiar el nombre del archivo generado
+Si queremos cambiar el nombre del archivo que acabamos de crear, podemos utilizar el comando mv.
+
+Por ejemplo, para cambiar el nombre de resultado_top.txt a palabras_mas_frecuentes.txt, ejecutamos:
+`mv resultado_top.txt palabras_mas_frecuentes.txt`
+
+El comando mv se utiliza para mover o renombrar archivos dentro del sistema. Después de ejecutar el comando, el archivo tendrá el nuevo nombre: palabras_mas_frecuentes.txt
 
 ---
 ### Conclusión
