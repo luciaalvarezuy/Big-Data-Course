@@ -140,35 +140,6 @@ Significa que escribiste mal la ruta. Debe ir todo junto:
 Recuerda que Hadoop guarda los resultados dentro de una carpeta, y dentro de esa carpeta se encuentra el archivo part-r-00000.
 ```
 
-### Para profundizar un poco más
-
-###### 1. Ordenar los resultados por frecuencia
-El archivo generado por Hadoop contiene dos columnas:
-
-- la palabra
-
-- la cantidad de veces que aparece
-
-Podemos ordenar los resultados para ver cuáles son las palabras más frecuentes. Para hacerlo, utilizamos el comando sort.
-
-El siguiente comando ordena los resultados de mayor a menor según la frecuencia de aparición (segunda columna):
-`sort -k2 -nr output_combinado/part-r-00000`
-
-
-Ordenar de mayor a menor a mayor frecuencia:
-`sort -k2 -nr output_combinado/part-r-00000`
-
-###### 2. Mostrar solo las palabras más frecuentes
-
-Si queremos visualizar únicamente las palabras con mayor número de repeticiones, podemos combinar sort con el comando head.
-
-El siguiente comando muestra las 5 palabras más repetidas:
-
-`sort -k2 -nr output_combinado/part-r-00000 | head -5`
-
-
----
-
 ### Evaluar los resultados
 
 Reflexiona sobre los resultados obtenidos:
@@ -197,6 +168,41 @@ Para ver el resultado del análisis, ejecutamos:
 `cat output_combinado/part-r-00000`
 
 Este archivo contiene todas las palabras encontradas en los textos y la cantidad de veces que aparecen.
+
+
+
+### Para profundizar un poco más
+
+###### 1. Ordenar los resultados por frecuencia
+
+De menor a mayor (orden ascendente)
+
+El archivo generado por Hadoop contiene dos columnas:
+
+- la palabra
+
+- la cantidad de veces que aparece
+
+Podemos ordenar los resultados para ver cuáles son las palabras más frecuentes. Para hacerlo, utilizamos el comando sort.
+
+El siguiente comando ordena los resultados de mayor a menor según la frecuencia de aparición (segunda columna):
+
+`sort -k2 -n output_combinado/part-r-00000`
+
+De mayor a menor:
+
+`sort -k2 -nr output_combinado/part-r-00000`
+
+###### 2. Mostrar solo las palabras más frecuentes
+
+Si queremos visualizar únicamente las palabras con mayor número de repeticiones, podemos combinar sort con el comando head.
+
+El siguiente comando muestra las 2 palabras más repetidas:
+
+`sort -k2 -nr output_combinado/part-r-00000 | head -2`
+
+
+---
 
 ---
 ### Conclusión
