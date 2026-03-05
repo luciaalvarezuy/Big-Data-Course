@@ -82,7 +82,7 @@ Para cada archivo, ejecuta el siguiente comando: **`hadoop jar hadoop-mapreduce-
 
 `hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount song.txt output_song`
 
-
+```diff
 ### Si falta el archivo JAR
 
 Si aparece este mensaje de error:
@@ -104,7 +104,7 @@ Confirma la descarga:
 Ejecuta nuevamente:
 
 `hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount cuento.txt output_cuento`
-
+```
 ---
 
 ### Visualizar los resultados
