@@ -177,9 +177,9 @@ Este archivo contiene todas las palabras encontradas en los textos y la cantidad
 
 El archivo generado por Hadoop contiene dos columnas:
 
-la palabra
+- la palabra
 
-la cantidad de veces que aparece
+- la cantidad de veces que aparece
 
 Podemos ordenar los resultados para identificar cuáles son las palabras más frecuentes. Para hacerlo, utilizamos el comando sort.
 
