@@ -149,13 +149,27 @@ Reflexiona sobre los resultados obtenidos:
 - ¿Qué palabra aparece más veces?
 - ¿Qué sucede si combinamos los tres textos en un solo archivo?
 
-Para probarlo:
+1. Combinar los archivos
+
+El siguiente comando une el contenido de los tres archivos (cuento.txt, noticia.txt y song.txt) en un único archivo llamado combinado.txt.
 
 `cat cuento.txt noticia.txt song.txt > combinado.txt`
 
+2. Ejecutar WordCount sobre el archivo combinado
+
+Ahora ejecutamos nuevamente el programa WordCount de Hadoop, pero utilizando el archivo combinado como entrada.
+
 `hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount combinado.txt output_combinado`
 
+Este comando generará una nueva carpeta llamada output_combinado, donde Hadoop almacenará los resultados del conteo de palabras.
+
+3. Visualizar los resultados
+
+Para ver el resultado del análisis, ejecutamos:
+
 `cat output_combinado/part-r-00000`
+
+Este archivo contiene todas las palabras encontradas en los textos y la cantidad de veces que aparecen.
 
 ---
 ### Conclusión
