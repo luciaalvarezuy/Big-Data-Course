@@ -83,6 +83,7 @@ Para cada archivo, ejecuta el siguiente comando: **`hadoop jar hadoop-mapreduce-
 `hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount song.txt output_song`
 
 Para hacerlo en una misma linea de código: 
+
 `rm -rf output_cuento output_noticia output_song && hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount cuento.txt output_cuento && hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount noticia.txt output_noticia && hadoop jar hadoop-mapreduce-examples-3.3.6.jar wordcount song.txt output_song`
 
 ```diff
@@ -120,6 +121,12 @@ Cada vez que Hadoop ejecuta un job, crea una carpeta de salida con los resultado
 
 `cat output_song/part-r-00000`
 
+
+Si lo quieres hacer en una línea de código:
+
+`cat output_cuento/part-r-00000; cat output_noticia/part-r-00000; cat output_song/part-r-00000`
+
+``` diff
 Si aparece este error:
 
 **`cat: output_noticia`**: Es un directorio
@@ -131,6 +138,7 @@ Significa que escribiste mal la ruta. Debe ir todo junto:
 `cat output_noticia/part-r-00000`
 
 Recuerda que Hadoop guarda los resultados dentro de una carpeta, y dentro de esa carpeta se encuentra el archivo part-r-00000.
+```
 
 ---
 
