@@ -50,6 +50,8 @@ Podemos listar todos los contenedores (activos e inactivos) con:
 
 En la última columna (`NAMES`) verás si existe uno con el nombre **myhiveserver**.
 
+<img width="818" height="137" alt="image" src="https://github.com/user-attachments/assets/48ecbb8d-2cd5-47bf-b1e1-ab6aab354a19" />
+
 ---
 
 ### Eliminar o renombrar el contenedor viejo
