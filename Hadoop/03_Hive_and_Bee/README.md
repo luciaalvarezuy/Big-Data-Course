@@ -145,9 +145,19 @@ Para conectarte, utiliza el comando:
 
 `sudo docker exec -it myhiveserver beeline -u 'jdbc:hive2://localhost:10000/'`
 
-Una vez dentro, deberías ver el prompt:
 
-`jdbc:hive2://localhost:10000>`
+Si les aparece este error:
+
+<img width="521" height="40" alt="image" src="https://github.com/user-attachments/assets/d4f42422-2cee-4184-9315-be695d7d8c52" />
+
+Hay que esperar unos minutos y volver a ejecutar el comando:
+
+`sudo docker exec -it myhiveserver beeline -u 'jdbc:hive2://localhost:10000/'`
+
+
+Una vez dentro, deberías ver el prompt:
+<img width="536" height="14" alt="image" src="https://github.com/user-attachments/assets/505a9b87-faf6-42f2-a2e6-ecab47e3b8fb" />
+
 
 Desde aquí podrás ejecutar tus consultas SQL.
 
