@@ -12,4 +12,5 @@ sudo docker stop myhiveserver
 
 
 remove:
+
 sudo docker rm myhiveserver
