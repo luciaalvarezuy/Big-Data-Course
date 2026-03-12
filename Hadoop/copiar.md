@@ -5,5 +5,11 @@ sudo docker ps -a
 
 Si les aparece "Exited" en mihyserver tienen que ejecutar: 
 
+parar:
 
-sudo rm -rf /home/project 
+
+sudo docker stop myhiveserver
+
+
+remove:
+sudo docker rm myhiveserver
