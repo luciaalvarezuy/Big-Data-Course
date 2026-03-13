@@ -21,15 +21,36 @@ La tabla contiene las siguientes columnas:
 
 ---
 
-## Preparar el entorno
+**Preparar el entorno**
 
-Si aún no tienes Hive en ejecución, abre una terminal y crea el contenedor con la imagen oficial de Apache Hive.
+En la mayoría de los casos solo necesitas ejecutar estos dos comandos para trabajar con Hive.
+
+*Paso 1. Arrancar el contenedor de Hive*
+
+`sudo docker start myhiveserver`
+
+*Paso 2. Conectarse a Hive con Beeline*
+`sudo docker exec -it myhiveserver beeline -u 'jdbc:hive2://localhost:10000/'`
+
+Si todo funciona correctamente, deberías ver algo como:
+
+    Connected to: Apache Hive
+    0: jdbc:hive2://localhost:10000>
+
+Desde ese prompt ya puedes ejecutar consultas SQL en Hive.
+
+⚠️ Nota: puede ser necesario ejecutar el segundo comando más de una vez. Esto ocurre porque Hive tarda unos segundos en iniciar dentro del contenedor después de arrancarlo.
+
+------------------------------------------------------------------------
+**Solución de problemas**
+
+Los siguientes pasos solo son necesarios si los comandos anteriores fallan.
+
+Si abres creas el contenedor con la imagen oficial de Apache Hive con el siguiente comando: 
 
 `sudo docker run -d -p 10000:10000 -p 10002:10002 --env SERVICE_NAME=hiveserver2 -v /home/project/data:/hive_custom_data --name myhiveserver apache/hive:4.0.0-alpha-1`
 
-
----
----
+Te pueden dar algunos problemas:
 
 ## Error común: "The container name '/myhiveserver' is already in use"
 
