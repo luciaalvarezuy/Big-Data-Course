@@ -1,142 +1,104 @@
-# Práctico Hive — Análisis de Opiniones
+**Preparar el entorno**
 
-## Objetivo
+En la mayoría de los casos solo necesitas ejecutar estos dos comandos para trabajar con Hive.
 
-Aplicar los conceptos aprendidos sobre **Hive** para realizar consultas básicas sobre una tabla cargada desde un archivo CSV.
-
----
-
-## Contexto
-
-Ya tenemos cargado el archivo `BigData_Custom_Sample.csv` en la tabla `opiniones`.  
-La tabla contiene las siguientes columnas:
-
-| Columna | Tipo | Descripción |
-|----------|------|-------------|
-| id | INT | Identificador único de cada registro |
-| edad | INT | Edad de la persona |
-| sexo | STRING | Sexo reportado (F o M) |
-| pais_donde_vive | STRING | País de residencia |``
-| opinion_big_data | STRING | Opinión textual sobre Big Data |
-
----
-
-## Preparar el entorno
-
-Si quieren intentar arrancar el contenedor (sin crearlo desde cero) pueden realizar estos pasos
-1. Arrancar el contenedor con esto:
+*Paso 1. Arrancar el contenedor de Hive*
 
 `sudo docker start myhiveserver`
 
-2. Conectarse a Beeline así:
-
+*Paso 2. Conectarse a Hive con Beeline*
 `sudo docker exec -it myhiveserver beeline -u 'jdbc:hive2://localhost:10000/'`
 
-Comentario del segundo paso: puede ser necesario intentarlo más de una vez. Esto pasa porque el servidor de Hive tarda unos segundos en iniciar dentro del contenedor después de que lo encendemos.
+Si todo funciona correctamente, deberías ver algo como:
 
----
----
+    Connected to: Apache Hive
+    0: jdbc:hive2://localhost:10000>
 
-Si quieren crear un nuevo contenedor pueden:
+Desde ese prompt ya puedes ejecutar consultas SQL en Hive.
 
-### Eliminar o renombrar el contenedor viejo
+⚠️ Nota: puede ser necesario ejecutar el segundo comando más de una vez. Esto ocurre porque Hive tarda unos segundos en iniciar dentro del contenedor después de arrancarlo.
 
-Si queremos **borrarlo por completo**, ejecutamos:
+------------------------------------------------------------------------
+
+**Solución de problemas**
+
+Los siguientes pasos solo son necesarios si los comandos anteriores fallan.
+
+**Problema 1: el contenedor no arranca o está corrupto**
+
+Si el contenedor myhiveserver no arranca correctamente, puedes eliminarlo y crear uno nuevo.
+
+1. Ver el estado de los contenedores
+
+`sudo docker ps -a`
+
+Si aparece algo como:
+    myhiveserver   Exited (...)
+
+significa que el contenedor existe pero no está funcionando correctamente.
+
+2. Eliminar el contenedor viejo
 
 `sudo docker rm -f myhiveserver`
 
-> El parámetro `-f` fuerza el borrado incluso si el contenedor está en ejecución.
+El parámetro -f fuerza el borrado incluso si el contenedor está en ejecución.
 
-Si preferimos **mantenerlo pero cambiarle el nombre**, podemos usar:
-
-`sudo docker rename myhiveserver myhiveserver_old`
-
----
-
-### Crear un nuevo contenedor limpio
-
-Una vez borrado o renombrado el anterior, ya podemos ejecutar el comando original sin conflicto:
+3. Crear un nuevo contenedor limpio
 
 `sudo docker run -d -p 10000:10000 -p 10002:10002 --env SERVICE_NAME=hiveserver2 -v /home/project/data:/hive_custom_data --name myhiveserver apache/hive:4.0.0-alpha-1`
 
----
-
-## Error común: "Bind for 0.0.0.0:10000 failed: port is already allocated"
-
-**Qué significa el error y cómo identificarlo**
-
-> `Bind for 0.0.0.0:10000 failed: port is already allocated`
-
-Este mensaje indica que el **puerto 10000 del sistema anfitrión ya está ocupado**.  
-Normalmente lo está usando **otro contenedor de Hive** o un proceso que no se cerró correctamente.
-
-Cuando ejecutamos el comando con el parámetro:
-
-`-p 10000:10000`
-
-...Docker intenta **reservar ese puerto** para exponerlo fuera del contenedor, pero **no puede hacerlo porque ya está en uso**.
-
----
-
-### **1. Ver los contenedores activos**
-
-Para ver todos los contenedores en ejecución y comprobar cuál está usando el puerto 10000:
-
-```bash
-sudo docker ps
-```
-
-Esto mostrará una lista con el nombre, ID y puertos usados por cada contenedor.
-
----
-
-### **2. Parar el contenedor que usa el puerto 10000**
-
-Usa este comando para **detener automáticamente el contenedor que publica el puerto 10000**:
-
-```bash
-sudo docker stop $(sudo docker ps -q --filter "publish=10000")
-```
-
----
-
-### **3. Borrar el contenedor antiguo (por nombre)**
-
-Si conocés el nombre del contenedor (por ejemplo, `myhiveserver`), podés eliminarlo con:
-
-```bash
-sudo docker rm -f myhiveserver
-```
-
-Esto detiene y borra el contenedor, liberando el puerto 10000 para volver a usarlo.
-
----
-
-### **4. Crear nuevamente el contenedor limpio de Hive**
-
-Una vez liberado el puerto, ejecutá nuevamente el comando original para crear un contenedor nuevo:
-
-```bash
-sudo docker run -d -p 10000:10000 -p 10002:10002 --env SERVICE_NAME=hiveserver2 -v /home/project/data:/hive_custom_data --name myhiveserver apache/hive:4.0.0-alpha-1
-```
-
----
-
-
-## Conectarse a Hive
-
-Hive se ejecuta dentro del contenedor.  
-Para conectarte, utiliza el comando:
+Este comando crea un nuevo contenedor de HiveServer2. Después puedes volver a conectarte con:
 
 `sudo docker exec -it myhiveserver beeline -u 'jdbc:hive2://localhost:10000/'`
 
-Una vez dentro, deberías ver el prompt:
+------------------------------------------------------------------------
 
-`jdbc:hive2://localhost:10000>`
+**Problema 2: error de puerto ocupado**
 
-Desde aquí podrás ejecutar tus consultas SQL.
+A veces aparece este error:
 
----
+    Bind for 0.0.0.0:10000 failed: port is already allocated
+
+Qué significa: El puerto 10000 ya está siendo usado por otro proceso o contenedor.
+
+1. Ver qué contenedores están activos
+
+`sudo docker ps`
+
+Esto mostrará qué contenedor está usando ese puerto.
+
+2. Parar el contenedor que usa el puerto
+
+`sudo docker stop $(sudo docker ps -q --filter "publish=10000")`
+
+Esto detiene cualquier contenedor que esté usando el puerto 10000.
+
+3. Borrar el contenedor viejo (opcional)
+
+Si sabes el nombre del contenedor, puedes eliminarlo directamente:
+
+`sudo docker rm -f myhiveserver`
+
+4. Crear nuevamente el contenedor de Hive
+
+`sudo docker run -d -p 10000:10000 -p 10002:10002 --env SERVICE_NAME=hiveserver2 -v /home/project/data:/hive_custom_data --name myhiveserver apache/hive:4.0.0-alpha-1`
+
+------------------------------------------------------------------------
+
+**Conectarse a Hive**
+
+Una vez que el contenedor está funcionando, puedes conectarte con:
+
+`sudo docker exec -it myhiveserver beeline -u 'jdbc:hive2://localhost:10000/'`
+
+Deberías ver el prompt:
+
+    jdbc:hive2://localhost:10000>
+
+Desde aquí podrás ejecutar consultas SQL sobre Hive.
+
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
 
 ## Verificar la tabla cargada
 
