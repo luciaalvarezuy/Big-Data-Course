@@ -7,7 +7,8 @@ En la mayoría de los casos solo necesitas ejecutar estos dos comandos para trab
 `sudo docker start myhiveserver`
 
 *Paso 2. Conectarse a Hive con Beeline*
-`sudo docker exec -it myhiveserver beeline -u 'jdbc:hive2://localhost:10000/'`
+
+`sudo docker exec -it myhiveserver beeline -u 'jdbc:hive2://localhost:10000/`
 
 Si todo funciona correctamente, deberías ver algo como:
 
